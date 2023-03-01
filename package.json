@@ -1,0 +1,17 @@
+{
+  "name": "californiagym",
+  "version": "1.0.0",
+  "description": "a time management project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "california",
+    "gym",
+    "management",
+    "time"
+  ],
+  "author": "Crocode",
+  "license": "MIT"
+}

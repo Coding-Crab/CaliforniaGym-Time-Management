@@ -1,0 +1,71 @@
+*{
+    outline: none;
+    
+}
+
+img{
+    pointer-events: none;
+}
+body{
+    background-color: #FAFBFF;
+    margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+html{
+    overflow: hidden;
+}
+.content{
+    display: block;
+    position: relative;
+    flex: 1;
+  }
+ 
+
+ /* Add animation to page content */
+ .animate-bottom{
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+ }
+ 
+ @-webkit-keyframes animatebottom{
+    from{
+        bottom: -100px;
+        opacity: 0;
+    }to{
+        bottom:0px;
+        opacity: 1;
+    }
+ }
+ 
+ @keyframes animatebottom {
+    from{
+        bottom: -100px;
+        opacity: 0;
+    }to{
+        bottom: 0;
+        opacity: 1;
+    }
+ }
+ 
+ #content h2,p{
+    display: block;
+    text-align: center;
+ }
+
+
+
+
+		footer img {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: -20px;
+		}
