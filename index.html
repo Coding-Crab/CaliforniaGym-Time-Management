@@ -21,10 +21,14 @@
         </div>
          <h2>Log In</h2>
          <p>Welcome Back ! please enter your password</p>
-          <div class="mb-3 d-block mx-auto">
-            <input type="password" id="inputId" class="form-control shadow-none mx-auto d-block w-50" style=" border: 0.5px solid #00000088;
-            " placeholder="*******">
-            <input type="submit" onclick="getInputValue();" value="Login"  class="btn shadow-none btn-sm w-50 mx-auto d-block mt-3 btn-primary">
+      
+           
+                <div class="mb-3 d-block mx-auto">
+      <form onsubmit="getInputValue(); return false;">
+        <input type="password" id="inputId" class="form-control shadow-none mx-auto d-block w-50" style=" border: 0.5px solid #00000088;" placeholder="*******">
+        <input type="submit" value="Login" class="btn shadow-none btn-sm w-50 mx-auto d-block mt-3 btn-primary">
+      </form>
+
           </div>
 
         </div>

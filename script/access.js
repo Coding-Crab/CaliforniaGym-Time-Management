@@ -1,11 +1,15 @@
 function getInputValue() {
-  // Selecting the input element and get its value 
   let inputVal = document.getElementById("inputId").value;
-  var codeEntred = '1919';
-  // Displaying the value
-  if(inputVal == codeEntred){
-      window.location.href = "./build/Beat_I/index.html";
-  }else if(inputVal != codeEntred){
-      alert("OOps, Wrong Password Try Again");
-  }
+  var codeEntered = '1919';
+  if (inputVal == codeEntered) {
+    window.location.href = "./build/Beat_I/index.html";
+    const url = window.location.href;
+    history.replaceState(null, null, url);
+  }else {
+    alert("Oops, Wrong Password. Try Again");
+  
+} 
+
 }
+ // Replace the current history state to prevent going back to the login page
+  
