@@ -24,10 +24,8 @@
 </head>
 <style>
  .container {
-	/* margin: 20px auto; */
 	padding: 20px;
 	max-width: 800px;
-	/* background-color: #f5f5f5; */
 	color: #333;
 }
 
@@ -134,8 +132,10 @@ darkModeToggle.addEventListener('change', () => {
             </div>
 
             <h1>Audio's Time Frames</h1> 
-            <iframe width="560" height="315" title="YouTube video player" class="d-block mx-auto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="myIframe">
+            <div class="ratio ratio-16x9 mt-5 pt-5"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HQtFR3mhzOY?autoplay=1&mute=false&enablejsapi=1"  title="YouTube video player" class="d-block mx-auto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="iframe">
             </iframe>
+            </div>
     
         <div class="row  pb-5">
             <div class="d-flex justify-content-center align-items-center flex-column">
@@ -143,31 +143,11 @@ darkModeToggle.addEventListener('change', () => {
             <h4 class="fw-bold" id="current_date">--- -- ----</h4>
         </div>
         <div class="text-center">
-            <button class="btn btn-primary rounded-0" type="button" id="set_timer"><i class="bi bi-clock"></i> Set Timer</button>
             <button class="btn btn-info text-light rounded-0" type="button"  id="set_alarm"><i class="bi bi-clock"></i> Set Alarm</button>
         </div>
-        <div class="row justify-content-center py-3">
-            <!-- Timer Field -->
-            <div class="col-md-4">
-                <div class="card rounded-0 shadow">
-                    <div class="card-header rounded-0  bg-dark bg-gradient text-light">
-                        <h5 class="card-title">
-                            Timer
-                        </h5>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="text-center fw-bolder" id="timer">--:--</h1>
-                        <div class="text-center">
-                            <button class="btn btn-primary btn-sm rounded-0" id="start_timer" type="button"><i class="bi bi-play"></i> Start</button>
-                            <button class="btn btn-light border btn-sm rounded-0 d-none" id="pause_timer" type="button"><i class="bi bi-pause"></i> Pause</button>
-                            <button class="btn btn-danger btn-sm rounded-0 d-none" id="reset_timer" type="button"><i class="bi bi-reset"></i> Reset</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End of Timer Field -->
+        
             <!-- Alarm List Field -->
-            <div class="col-md-4">
+            <div class="col-md-4 d-block mx-auto pt-5">
                 <div class="card rounded-0 shadow">
                     <div class="card-header rounded-0  bg-dark bg-gradient text-light">
                         <h5 class="card-title">
