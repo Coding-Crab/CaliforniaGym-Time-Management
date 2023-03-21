@@ -60,7 +60,7 @@ body.dark-mode .dark-mode-icon {
 
 
 </style>
-  <body style="background-color: #5B7FFF" class="light">
+  <body style="background-color: #008CCA" class="light">
     <div class="content_bg">
     <div class="container" id="container">
 
@@ -131,27 +131,27 @@ darkModeToggle.addEventListener('change', () => {
                <img src="../Images/Hero.png" id="heroimages" class="Images-fluid nonEvent w-45 mx-auto d-block" alt="main-hero-image"> 
             </div>
 
-            <h1>Audio's Time Frames</h1> 
-            <div class="ratio ratio-16x9 mt-5 pt-5"> 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HQtFR3mhzOY?autoplay=1&mute=false&enablejsapi=1"  title="YouTube video player" class="d-block mx-auto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="iframe">
+            <h3>Audio Files' Control</h3> 
+            <div class="ratio ratio-16x9 mt-1 pt-1"> 
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/uNd5kvrGHjk?autoplay=1&mute=false&enablejsapi=1"  title="YouTube video player" class="d-block mx-auto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="iframe">
             </iframe>
             </div>
     
-        <div class="row  pb-5">
+        <div class="row  pb-5 pt-5">
             <div class="d-flex justify-content-center align-items-center flex-column">
-            <h1 class="fw-bolder" id="current_time">00:00:00 --</h1>
-            <h4 class="fw-bold" id="current_date">--- -- ----</h4>
+            <h1 class="fw-bolder fnt" id="current_time">00:00:00 --</h1>
+            <h4 class="fw-bold fnt" id="current_date">--- -- ----</h4>
         </div>
         <div class="text-center">
-            <button class="btn btn-info text-light rounded-0" type="button"  id="set_alarm"><i class="bi bi-clock"></i> Set Alarm</button>
+            <button class="btn bgAlram text-light rounded-3" type="button"  id="set_alarm"><i class="bi bi-clock"></i> Span</button>
         </div>
         
             <!-- Alarm List Field -->
-            <div class="col-md-4 d-block mx-auto pt-5">
+            <div class="col-md-4 d-block mx-auto pt-3">
                 <div class="card rounded-0 shadow">
-                    <div class="card-header rounded-0  bg-dark bg-gradient text-light">
+                    <div class="card-header rounded-0  bgAlram bg-gradient text-light">
                         <h5 class="card-title">
-                            Alarm List
+                            Registry
                         </h5>
                     </div>
                     <div class="card-body">
@@ -173,8 +173,8 @@ darkModeToggle.addEventListener('change', () => {
                 <div class="modal-body">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary rounded-0" onclick="$('#uniModal form').submit()">Save</button>
-                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bgAlram text-light rounded-0" onclick="$('#uniModal form').submit()">Set</button>
+                    <button type="button" class="btn bg-secondary text-light rounded-0" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -213,9 +213,9 @@ darkModeToggle.addEventListener('change', () => {
                 <div class="form-group">
                     <label for="" class="control-label">Time (Hh:mm)</label>
                     <div class="input-group mb-3">
-                        <input type="number" name="hour" min="1" max="12" class="form-control" placeholder="Hh" aria-label="Minutes" required>
+                        <input type="number" name="hour" min="1" max="12" class="form-control" placeholder="HH" aria-label="Minutes" required>
                         <span class="input-group-text">:</span>
-                        <input type="number" name="minutes" min="0" max="59" class="form-control" placeholder="Mm" aria-label="Seconds" required>
+                        <input type="number" name="minutes" min="0" max="59" class="form-control" placeholder="MM" aria-label="Seconds" required>
                         <span class="input-group-text">:</span>
                         <select class="form-select" name="meridein" id="meridein" required>
                             <option>AM</option>
@@ -253,9 +253,21 @@ darkModeToggle.addEventListener('change', () => {
     </div>
          <!-- FOOTER -->
          <!-- currentColor -->
-         <footer class="container pb-3 px-5">
-            <p>Designer, <a href="https://www.instagram.com/eya_saiidi/">Eya Saidi</a> Developer, <a href="https://www.instagram.com/masythem/">Aziz Saidi</a> &copy; 2022</p>
-          </footer>
+          <footer class="container fert  pb-3 px-5">
+            <div class="cont">
+                <div class="fnf">
+                <p>Designer: </p>
+                <a target="_blank" href="https://www.instagram.com/eya_saiidi/"> Eya Saidi</a>
+            </div>
+            <div class="fnf">
+                <p>Developer: </p>
+                <a target="_blank" href="http://codingcrab.surge.sh/"> Aziz Saidi</a>
+            </div>
+            </div>
+            <div class="btCont">
+                <span class="copy">&copy; 2022</span>
+            </div>
+        </footer>
 
 </div>
 

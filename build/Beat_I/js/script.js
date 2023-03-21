@@ -30,7 +30,7 @@ if (alarm_item === null) {
     alarm_item = window.localStorage.getItem("alarm");
 }
 function unmuted() {
-    $(framedVideo).prop('src', 'https://www.youtube.com/embed/HQtFR3mhzOY?autoplay=1&mute=false&enablejsapi=1');
+    $(framedVideo).prop('src', 'https://www.youtube.com/embed/uNd5kvrGHjk?autoplay=1&mute=false&enablejsapi=1');
 }
 
 seq = parseInt(seq);
@@ -55,16 +55,16 @@ window.current_datetime = function() {
                 let cnts = 1;
                 function playonended() {
                     $("audio")[0].play();
-                    $(framedVideo).prop('src', 'https://www.youtube.com/embed/HQtFR3mhzOY?autoplay=1&mute=true&enablejsapi=1');
+                    $(framedVideo).prop('src', 'https://www.youtube.com/embed/uNd5kvrGHjk?autoplay=1&mute=true&enablejsapi=1');
                     if (cnts == _ai.repeat) {
                         $("audio")[0].pause();
-                        $(framedVideo).prop('src', 'https://www.youtube.com/embed/HQtFR3mhzOY?autoplay=1&mute=false&enablejsapi=1');
+                        $(framedVideo).prop('src', 'https://www.youtube.com/embed/uNd5kvrGHjk?autoplay=1&mute=false&enablejsapi=1');
                     }
                     cnts++;
                 }
                 $("audio")[0].src = _ai.audio;
                 $('.alarm-text[data-id="' + _ai.id + '"]').addClass("blinks");
-                $(framedVideo).prop('src', 'https://www.youtube.com/embed/HQtFR3mhzOY?autoplay=1&mute=true&enablejsapi=1');
+                $(framedVideo).prop('src', 'https://www.youtube.com/embed/uNd5kvrGHjk?autoplay=1&mute=true&enablejsapi=1');
                 $("audio")[0].loop = false;
                 $("audio")[0].play();
                 $("audio")[0].addEventListener("ended", playonended);
@@ -119,7 +119,7 @@ window.uniModal = function($title = "", $content = {}, $data = []) {
         }
         alarm_item[_id] = { id: _id, time: __time, alarm: alarm, audio: _aud, repeat: _rep };
         localStorage.setItem("alarm", JSON.stringify(alarm_item));
-        alert("Alarm Successfully Saved");
+        alert("Span successfully saved.");
         new_alarm_list(_id);
         $(".modal").modal("hide");
     });
@@ -140,7 +140,7 @@ window.new_alarm_list = function(k) {
         if (_conf === true) {
             delete alarm_item[_alarm.id];
             localStorage.setItem("alarm", JSON.stringify(alarm_item));
-            alert("Alarm has been deleted successfully.");
+            alert("Span successfully deleted.");
             remove_alarm_list(_alarm.id);
         }
     });
@@ -164,7 +164,7 @@ $(function() {
     });
 
     $("#set_alarm").click(function() {
-        uniModal("Set New Alarm", $($("noscript#alarm-form-script").html()));
+        uniModal("Set New", $($("noscript#alarm-form-script").html()));
     });
     // Alarm triggers: End
 });

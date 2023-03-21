@@ -15,6 +15,10 @@ body{
 	flex-direction: column;
 }
 
+.btnAlarm{
+    background-color: #008CCA !important;
+    color: light;
+}
 
 
 html{
