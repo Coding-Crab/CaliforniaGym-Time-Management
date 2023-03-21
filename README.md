@@ -5,9 +5,8 @@ Time management is a concept that refers to the process of organizing and priori
 
 ! This Project was developed By Coding Crab and Designed By Eya Saidi .
 
-Eya Saidi Social:
+Ig Eya Saidi: @eya_saiidi
 
-https://www.instagram.com/eya_saiidi/
 
 #Project Review:
 
